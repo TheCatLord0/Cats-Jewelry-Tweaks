@@ -1,0 +1,35 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+        }
+    ],
+    "descriptionId": "Uranium",
+    "ingredient": {
+        "tag": "c:ingots/uranium"
+    },
+    "materialType": [
+        "metal"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/uranium",
+    "quality": 0.8,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:current_hp_damage",
+            "amount": 0.02,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_damage",
+                "damageType": "mekanism:radiation",
+                "amount": {
+                    "base": 2,
+                    "scalar": 3
+                }
+            }
+        }
+    }
+}

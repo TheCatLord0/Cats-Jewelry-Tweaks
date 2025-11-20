@@ -1,0 +1,17 @@
+{
+  "descriptionId": "Zinc",
+  "ingredient": {
+    "tag": "c:ingots/zinc"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/zinc",
+  "quality": 0.75,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:generic.gravity",
+            "amount": -0.01,
+            "operation": "add_value"
+        }
+    }
+}

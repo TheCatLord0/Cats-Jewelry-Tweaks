@@ -1,0 +1,17 @@
+{
+  "descriptionId": "Lead",
+  "ingredient": {
+    "tag": "c:ingots/lead"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/lead",
+  "quality": 1.0,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:generic.armor_toughness",
+            "amount": 2,
+            "operation": "add_value"
+        }
+    }
+}

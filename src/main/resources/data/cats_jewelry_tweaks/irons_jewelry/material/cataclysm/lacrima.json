@@ -1,0 +1,43 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "cataclysm"
+        }
+    ],
+
+    "descriptionId": "Lacrima",
+    "ingredient": {
+        "item": "cataclysm:lacrima"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/lacrima",
+    "quality": 3,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:dodge_chance",
+            "amount": 0.025,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:blindness",
+                "duration": 80,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:speed"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:slowness"
+        }
+    }
+}

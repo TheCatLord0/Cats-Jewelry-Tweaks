@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "create"
+        }
+    ],
+  "descriptionId": "Andesite Alloy",
+  "ingredient": {
+    "item": "create:andesite_alloy"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/andesite",
+  "quality": 0.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:player.block_interaction_range",
+            "amount": 1,
+            "operation": "add_value"
+        }
+    }
+}

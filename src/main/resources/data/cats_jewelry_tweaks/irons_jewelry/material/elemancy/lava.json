@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_elemancy"
+        }
+    ],
+    "descriptionId": "Lava",
+    "ingredient": {
+        "item": "ars_elemancy:lava_essence"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/lava",
+    "quality": 2.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "ars_nouveau:sauce.perk.fire_power",
+            "amount": 1,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "apothic_attributes:grievous",
+                "duration": 80,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:fire_resistance"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "ars_elemental:hellfire"
+        }
+    }
+}

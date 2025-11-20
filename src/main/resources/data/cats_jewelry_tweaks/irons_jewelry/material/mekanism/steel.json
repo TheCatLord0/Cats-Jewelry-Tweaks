@@ -1,0 +1,17 @@
+{
+  "descriptionId": "Steel",
+  "ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/steel",
+  "quality": 1.0,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:generic.armor",
+            "amount": 2,
+            "operation": "add_value"
+        }
+    }
+}

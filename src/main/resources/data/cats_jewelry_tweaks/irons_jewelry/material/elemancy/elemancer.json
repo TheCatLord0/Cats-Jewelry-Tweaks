@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_elemancy"
+        }
+    ],
+    "descriptionId": "Elemant",
+    "ingredient": {
+        "item": "ars_elemancy:elemancer_essence"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/elemancer",
+    "quality": 2.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:fire_damage",
+            "amount": 2,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "ars_elemental:venom",
+                "duration": 120,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 2.5
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "ars_nouveau:shielding"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:slowness"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+        }
+    ],
+  "descriptionId": "Malignant Pewter",
+  "ingredient": {
+    "item": "malum:malignant_pewter_ingot"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/pewter",
+  "quality": 3,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "malum:malignant_conversion",
+            "amount": 0.1,
+            "operation": "add_value"
+        }
+    }
+}

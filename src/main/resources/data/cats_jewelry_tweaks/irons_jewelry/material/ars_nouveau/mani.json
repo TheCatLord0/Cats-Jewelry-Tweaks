@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_nouveau"
+        }
+    ],
+    "descriptionId": "Manipulation",
+    "ingredient": {
+        "item": "ars_nouveau:manipulation_essence"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/mani",
+    "quality": 2,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:player.block_interaction_range",
+            "amount": 0.75,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:levitation",
+                "duration": 80,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "ars_nouveau:shielding"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:hunger"
+        }
+    }
+}

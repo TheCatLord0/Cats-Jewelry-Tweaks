@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "cataclysm"
+        }
+    ],
+  "descriptionId": "Ancient Metal",
+  "ingredient": {
+    "item": "cataclysm:ancient_metal_ingot"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/ancient",
+  "quality": 2,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:draw_speed",
+            "amount": 0.1,
+            "operation": "add_multiplied_base"
+        }
+    }
+}

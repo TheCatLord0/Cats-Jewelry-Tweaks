@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+        }
+    ],
+    "descriptionId": "Charged Certus",
+    "ingredient": {
+        "item": "ae2:charged_certus_quartz_crystal"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/ccertus",
+    "quality": 2,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:generic.attack_speed",
+            "amount": -0.75,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:weakness",
+                "duration": 100,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:resistance"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:weakness"
+        }
+    }
+}

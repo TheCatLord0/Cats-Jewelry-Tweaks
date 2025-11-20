@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+        }
+    ],
+    "descriptionId": "Fluix",
+    "ingredient": {
+        "item": "ae2:fluix_crystal"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/fluix",
+    "quality": 2.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:player.block_interaction_range",
+            "amount": 0.5,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:mining_fatigue",
+                "duration": 100,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:regeneration"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:mining_fatigue"
+        }
+    }
+}

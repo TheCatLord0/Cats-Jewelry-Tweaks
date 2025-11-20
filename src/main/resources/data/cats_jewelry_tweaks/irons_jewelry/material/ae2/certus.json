@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+        }
+    ],
+    "descriptionId": "Certus",
+    "ingredient": {
+        "item": "ae2:certus_quartz_crystal"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/certus",
+    "quality": 1.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:crit_chance",
+            "amount": 0.1,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:slowness",
+                "duration": 100,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:absorption"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:slowness"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "irons_jewelry:ring",
+  "descriptionId": "pattern.irons_jewelry.barbed_band",
+  "partForQuality": "irons_jewelry:gem_band_barbed",
+  "parts": [
+    {
+      "bonuses": [
+        {
+          "bonusType": "irons_jewelry:attribute_bonus"
+        }
+      ],
+      "drawOrder": 0,
+      "id": "irons_jewelry:band_barbed",
+      "materialCost": 8
+    },
+    {
+      "drawOrder": 1,
+      "id": "irons_jewelry:gem_band_barbed",
+      "materialCost": 3
+    }
+  ],
+  "qualityMultiplier": 2.5,
+  "unlockedByDefault": false
+}

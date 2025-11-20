@@ -1,0 +1,24 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "cataclysm"
+        }
+    ],
+
+  "descriptionId": "Black Steel",
+  "ingredient": {
+    "item": "cataclysm:black_steel_ingot"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/black_steel",
+  "quality": 2,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "minecraft:generic.knockback_resistance",
+            "amount": 0.2,
+            "operation": "add_value"
+        }
+    }
+}

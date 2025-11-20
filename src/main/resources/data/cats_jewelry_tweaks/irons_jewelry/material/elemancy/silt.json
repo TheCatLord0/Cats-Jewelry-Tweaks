@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_elemancy"
+        }
+    ],
+    "descriptionId": "Silt",
+    "ingredient": {
+        "item": "ars_elemancy:silt_essence"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/silt",
+    "quality": 2.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "ars_nouveau:sauce.perk.earth_power",
+            "amount": 1,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "minecraft:levitation",
+                "duration": 120,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "ars_nouveau:recovery"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "apothic_attributes:bleeding"
+        }
+    }
+}

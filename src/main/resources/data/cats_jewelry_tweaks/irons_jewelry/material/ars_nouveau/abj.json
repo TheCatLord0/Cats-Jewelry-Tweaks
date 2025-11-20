@@ -1,0 +1,42 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_nouveau"
+        }
+    ],
+    "descriptionId": "Abjuration",
+    "ingredient": {
+        "item": "ars_nouveau:abjuration_essence"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/abj",
+    "quality": 2,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "ars_nouveau:sauce.perk.mana_discount",
+            "amount": 6.7,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_effect",
+                "effect": "ars_nouveau:hex",
+                "duration": 80,
+                "amplifier": {
+                    "base": 0,
+                    "scalar": 1.6
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "apothic_attributes:vitality"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "apothic_attributes:grievous"
+        }
+    }
+}

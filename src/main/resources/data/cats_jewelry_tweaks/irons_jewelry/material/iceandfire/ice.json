@@ -1,0 +1,36 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "iceandfire"
+        }
+    ],
+    "descriptionId": "Ice Dragonsteel",
+    "ingredient": {
+        "item": "iceandfire:dragonsteel_ice_ingot"
+    },
+    "materialType": [
+        "metal"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/ice_dsteel",
+    "quality": 3,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:cold_damage",
+            "amount": 3,
+            "operation": "add_value"
+        }
+    },
+    "irons_jewelry:action": {
+        "targetSelf": false,
+        "action": {
+            "type": "irons_jewelry:apply_effect",
+            "effect": "minecraft:slowness",
+            "duration": 80,
+            "amount": {
+                "base": 1,
+                "scalar": 1.5
+            }
+        }
+    }
+}

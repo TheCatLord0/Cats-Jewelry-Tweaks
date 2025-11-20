@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+        }
+    ],
+  "descriptionId": "Soulstained Steel",
+  "ingredient": {
+    "item": "malum:soul_stained_steel_ingot"
+  },
+  "materialType": ["metal"
+  ],
+  "paletteLocation": "cats_jewelry_tweaks:palettes/soul_steel",
+  "quality": 1.5,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "malum:soul_ward_capacity",
+            "amount": 3,
+            "operation": "add_value"
+        }
+    }
+}

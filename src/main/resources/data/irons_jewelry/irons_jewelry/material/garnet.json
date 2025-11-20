@@ -1,0 +1,36 @@
+{
+  "descriptionId": "material.irons_jewelry.garnet",
+  "ingredient": {
+    "tag": "c:gems/garnet"
+  },
+  "materialType": [
+    "gem"
+  ],
+  "paletteLocation": "irons_jewelry:palettes/garnet",
+  "quality": 2,
+  "bonusParameters": {
+    "irons_jewelry:attribute": {
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 0.04,
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:resistance"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:wither"
+    },
+    "irons_jewelry:action": {
+      "targetSelf": false,
+      "action": {
+        "type": "irons_jewelry:apply_effect",
+        "duration": 80,
+        "amplifier": {
+          "base": 1,
+          "scalar": 1
+        },
+        "effect": "apothic_attributes:sundering"
+      }
+    }
+  }
+}

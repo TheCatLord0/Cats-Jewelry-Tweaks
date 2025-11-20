@@ -1,0 +1,41 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+        }
+    ],
+    "descriptionId": "Antimatter",
+    "ingredient": {
+        "item": "mekanism:pellet_antimatter"
+    },
+    "materialType": [
+        "gem"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/antimatter",
+    "quality": 4,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:elytra_flight",
+            "amount": 1,
+            "operation": "add_value"
+        },
+        "irons_jewelry:action": {
+            "targetSelf": false,
+            "action": {
+                "type": "irons_jewelry:apply_damage",
+                "damageType": "mekanism:radiation",
+                "amount": {
+                    "base": 5,
+                    "scalar": 5
+                }
+            }
+        },
+        "irons_jewelry:positive_effect": {
+            "effect": "minecraft:instant_health"
+        },
+        "irons_jewelry:negative_effect": {
+            "effect": "minecraft:wither"
+        }
+    }
+}

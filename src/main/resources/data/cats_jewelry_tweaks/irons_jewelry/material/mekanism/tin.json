@@ -1,0 +1,18 @@
+{
+    "descriptionId": "Tin",
+    "ingredient": {
+        "tag": "c:ingots/tin"
+    },
+    "materialType": [
+        "metal"
+    ],
+    "paletteLocation": "cats_jewelry_tweaks:palettes/tin",
+    "quality": 0.75,
+    "bonusParameters": {
+        "irons_jewelry:attribute": {
+            "attribute": "apothic_attributes:arrow_velocity",
+            "amount": 0.05,
+            "operation": "add_multiplied_total"
+        }
+    }
+}
